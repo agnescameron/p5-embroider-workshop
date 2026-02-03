@@ -8,14 +8,14 @@ function setup() {
   exportPesButton.mousePressed(() => {
     exportEmbroidery("template.pes");
   });
-  exportPesButton.position(0, height + 30);
+  exportPesButton.position(10, height + 30);
 }
 
 function draw() {
   background("lightgrey");
   beginRecord(this);
 
-  stroke(50, 30, 200);         // sets the stroke color
+  stroke(255);         // sets the stroke color
   setStitch(0.5, 5, 0); // min stitch length, stitch length, noise 
   strokeWeight(4);     // sets the thickness of the stroke in mm
 

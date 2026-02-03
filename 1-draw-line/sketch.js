@@ -6,7 +6,7 @@ function setup() {
   exportPesButton.mousePressed(() => {
     exportEmbroidery("template.pes");
   });
-  exportPesButton.position(0, height + 30);
+  exportPesButton.position(10, height + 30);
 }
 
 function draw() {
