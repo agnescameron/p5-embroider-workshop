@@ -18,6 +18,7 @@ function draw() {
   stroke(255);         // sets the stroke color
   setStitch(0.5, 5, 0); // min stitch length, stitch length, noise 
   strokeWeight(4);     // sets the thickness of the stroke in mm
+  setStitchWidth(0.5); // spacing of parallel stitches
 
   setStrokeMode("lines");
   line(10, 10, 90, 10);
