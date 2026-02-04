@@ -106,7 +106,8 @@ function serialEvent() {
   if(inData != null){
     inData = trim(inData);
     vals = int(splitTokens(inData, ","));    
-  
+
+    //get info from buttons
     let buttonsNow = vals.slice(2);
 
     for(let i=0; i<buttonsNow.length; i++){
