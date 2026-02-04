@@ -19,20 +19,19 @@ function draw() {
   beginRecord(this);
   stroke(255);
 
-    // commands go here
+  for (i = 1; i < 10; i++) {
+      circle(i*10, 50, 5+Math.random()*15);
+  }
+
   // for (i = 1; i < 10; i++) {
-  //     circle(10 + i*10, i*10, 10+Math.random()*90);
+  //     circle(i*10, i*10, 5+Math.random()*30);
   // }
 
-  beginShape();
-    vertex(10,10);
-    vertex(80,5);
-    vertex(90,50);
-    vertex(95,70);
-    vertex(30,50);
-    vertex(10,30);
-    vertex(10,10);
-  endShape();
+  // for (i = 1; i < 10; i+=2) {
+  //   for (j = 1; j < 10; j+=2) {
+  //     circle(i*10, j*10, 5 + Math.random()*30);
+  //   }
+  // }
 
   // trimThread(); // comment back in when you add some code
   endRecord();
